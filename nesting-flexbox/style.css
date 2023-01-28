@@ -28,13 +28,12 @@ a {
   text-decoration: none;
   font-size: 15px;
   background:rgba(0,0,0,0.2);
-  padding:20px 5px;
 }
 a:hover {
   background:rgba(0,0,0,0.4);
 }
 
-/* our flex container */
+
 .slider-nav ul {
   list-style: none;
   margin: 0;
@@ -42,30 +41,33 @@ a:hover {
   display:flex;
 }
 
-/* our first flex item */
 .slider-nav li {
-  flex:2; /* THis is flex 'item' -ish */
-  text-align: center;    /* item center, default is stretch */
-  display:flex; /* This is flex 'container' -ish */
+  display:flex;
+  flex:2;
 }
 
 .slider-nav .arrow {
   flex:1;
 }
-
-.arrow a {
-  font-size: 30px;
+.slider-nav .arrow a {
+  font-size: 40px;
 }
 
 .slider-nav a {
-  flex-basis:100%;
-  display:flex;
   align-items:center;
-  /*We want to stretch as well as center*/
+  flex:1;
+  display:flex;
+  padding:20px 5px;
 }
 
-/* This is the flex item */
 .slider-nav span {
   display: block;
-  width: 100%;
+  flex:1;
+  text-align: center;
 }
+
+
+/*.slider-nav ul * {
+  border:1px solid red;
+  margin:10px;
+}*/
